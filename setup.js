@@ -44,7 +44,7 @@ export async function main(ns) {
 		let isNotTakenOver = true;
 		let attemptCounter = 0;
 
-		if (ns.getServerNumPortsRequired <= 5 && attemptCounter < 30) {
+		if (ns.getServerNumPortsRequired <= 5 && attemptCounter < 50) {
 			while (isNotTakenOver) {
 				if (ns.fileExists("BruteSSH.exe", "home")) {
 					ns.brutessh(currentTarget);
